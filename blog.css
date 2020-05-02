@@ -1,0 +1,67 @@
+.container{
+    display:grid;
+    width:90%;
+    margin:auto;
+    margin-top: 150px;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 100px 350px 200px 50px;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "feat feat feat feat feat feat feat feat"
+    "main main main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+    border : 2px solid green;
+}
+
+.box{
+    display:flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: right;
+    border: 1px solid red;
+    padding: 15px;
+}
+
+#one{
+    font-size: 30px;
+    color:white;
+    background-image: url("images/ganges.jpg");
+    background-size: 100%;
+}
+
+#two{
+    font-size: 30px;
+    color:white;
+    background-image: url("images/ozone.jpg");
+    background-size: cover;
+}
+
+#three{
+    font-size: 30px;
+    color:rgb(5, 35, 63);
+    background-image: url("images/sheep.jpg");
+    background-size: contain;
+}
+
+#four{
+    font-size: 30px;
+    color: rgb(19, 5, 5);
+    background-image: url("images/antarctica.jpg");
+    background-size: cover;
+}
+
+.header{
+    grid-area: hd;
+}
+
+.footer{
+    grid-area: ft;
+}
+
+.feature{
+    grid-area: feat;
+}
+
+.content{
+    grid-area: main;
+}

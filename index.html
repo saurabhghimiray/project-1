@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Impact Of Lockdown On Nature</title>
+    <meta
+    content="width=device-width,initial-scale=1,maximum scale=1"
+    name="viewport"
+    />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #nestedGrid{
+            display:grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+            grid-gap: 5px;
+            border: 3px solid white;
+        }
+    
+
+    .photoBox{
+        width: 560px;
+        height:195px;
+        border:1px solid red;
+        background: #f9fa4d;
+    }
+
+    #one{
+        background-image:url(images/himalayas.jpg);
+        background-size: 555px;
+    }
+
+    #two{
+        background-image:url(images/bbc.jpg);
+        background-size: 550px;
+    }
+
+    #three{
+        background-image:url(images/ganga.jpg);
+        background-size: 555px;
+    }
+    #four{
+        background-image:url(images/beach.jpg);
+        background-size: 550px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header box">   
+       <h1>The Positive Impacts On The Environment Since The Coronavirus Lockdown Began</h1>
+       </div>
+       <div class="sidebar box"><h1>Blog Posts</h1><a href="post.html">Most Recent Post</a></div>
+       <div class="content box">
+           <div id="nestedGrid">
+               <div id="one" class="photoBox">
+                </div>
+                <div id="two" class="photoBox"></div>
+                <div id="three" class="photoBox"></div>
+                <div id="four" class="photoBox"></div>
+            </div>
+        </div>
+       <div class="footer box">May 2,2020</div>
+</div>
+</body>
+</html>
